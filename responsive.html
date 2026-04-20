@@ -1,0 +1,283 @@
+<!dcotype html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<header>
+
+
+ 		<div id="col1">
+
+<img src="images/pk1.jpeg" style="border-radius:50px"; class="pic" height="100%">   
+
+		</div>
+ 		<div id="col2">
+		
+		</div>
+
+
+</header>
+<title>My Profile </title>
+<style>
+div
+{
+border:1px black solid;
+pading:10px;
+
+}
+
+#col1
+{
+height:100px;
+width:21%;
+margin:10px;
+border-radius:100px;
+}
+#col2
+{
+width:60%;
+height:200px;
+margin:10px;
+
+}
+
+
+header
+{
+border:1px black solid;
+//height:300px;
+display:flex;
+// flex-direction:column;
+flex-direction:row;
+//justify-content:end;
+//justify-content:start;
+//justify-content:center;end;
+justify-content:space-between;
+flex-wrap:wrap;
+
+
+}
+
+main
+{
+display:flex;
+flex-wrap:wrap;
+
+}
+
+.cardstyle
+{
+width:50%;
+height:250px;
+box-shadow:10px 10px 10px black;
+
+
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px)
+ {
+
+ body{background:CYAN;}
+#col2{display:none}
+header{justify-content:center;}
+
+.cardstyle{
+margin:auto;
+margin-top:40px;
+
+}
+
+nav ol li 
+{
+display:block;
+}
+
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px)
+ {
+
+body{background:#8F9CO7;}
+#col2{width:70%;}
+#col1{width:10%;
+height:40px;
+width:40px;
+}
+main{
+justify-content:center;
+}
+
+.cardstyle{width:40%;
+margin:10px;
+}
+nav ol li 
+{
+display:inline;
+}
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+ {
+  body{background:#f68ffa;}
+  #col1{width:11%;height:100px;}
+#col2{height:200px}
+.cardstyle{width:20%;
+margin:10px;
+}
+
+
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+body{background:gray;}
+#col2{width:85%;height:300px;margin:auto;}
+#col1{width:8%;height:100px;}
+}
+.pic
+{
+width:100%;
+}
+nav
+{
+width:90%
+margin:auto;
+text-align:center;
+margin-50px;
+}
+nav ol li 
+{
+list-style:none;
+background:teal;
+margin-left:-2px;
+
+padding:20px;
+text-align:center;
+cursor:pointer;
+box-shadow:10px 10px 10px gray;
+transition:0.50s;
+}
+nav ol li:hover
+{
+background:white;
+transform:scale(1.10);
+}
+a:link{color:yellow;text-decoration:none;}
+a:visited{color:yellow;}
+a:hover{text-decoration:underline;color:red;}
+a:active{}
+
+footer
+{
+ 
+display:flex;
+flex-decoration:row;
+text-align:center;
+margin-top:100px;
+clear:both;
+text-color:white;
+}
+
+footer #info,#sitemap,#socialmedia
+{
+width:200%;
+padding:10px;
+}
+#sitemap ul li
+{
+list-style:none;
+text-align:left;
+margin-left:40%;
+}
+#socialmedia ul li
+{
+list-style:none;
+text-align:left;
+margin-left:40%;
+}
+
+
+</style>
+
+
+<body>
+<nav>
+<!--order list-->
+
+<ol>
+<li><a href="index.html">home</li>
+<li><a href="practice.html">Practice work</li>
+<li><a href="web gallery.html">Project </li>
+<li><a href="http:9648109382">Contact</a>
+
+</li>
+
+
+</ol>
+
+</nav>
+
+
+
+
+<main>
+<div class="cardstyle" id="card1">
+<img src="images/p1.jpg" class="pic" height="100%">
+
+</div>
+<div class="cardstyle" id="card2"><img src="images/p2.jpg" class="pic" height="100%">
+</div>
+
+
+
+
+<div id="socialmedia">
+<details>
+<summary>Socialmedia</summary>
+<ul>
+<li>
+<a href="http://facebook.com">facebook</a>
+</li>
+
+<li>
+
+<a href="http://instagram.com">instagram</a>
+<li>
+<a href="http://youtube.com> <img src="images/YOU.PNG"</li>
+</ul>
+
+</main>
+
+
+
+</body>
+<footer>
+ 
+
+<div id="sitemap">sitemap</div>
+<div id="socialmedia">socialmedia</div>
+
+
+
+
+</footer>
+
+
+</html>
+
+
+
