@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<title>Praofil</title>
+
+</head>
+
+
+
+
+<style>
+@keyframes runtext
+{
+   form{left:-600px}
+   to{left:250px}
+}
+@keyframes changepic
+{
+
+
+10%{background-image:url(images/n1.jpg);}
+20%{background-image:url(images/n2.jpg);}
+30%{background-image:url(images/n3.jpg);}
+40%{background-image:url(images/n4.jpg);}
+50%{background-image:url(images/n5.jpg);}
+60%{background-image:url(images/p5.jpg);}
+70%{background-image:url(images/n3.jpg);}
+80%{background-image:url(images/n6.jpg);}
+90%{background-image:url(images/p3.jpg);}
+100%{background-image:url(images/n2.jpg);}
+100%{background-image:url(images/p4.jpg);}
+}
+@keyframes mycolor
+{
+
+10%{color: yellow;}
+30%{color: green;}
+50%{color: greenyellow;}
+70%{color: cyan;}
+}
+
+header
+
+{
+   background: black;
+background-image:url(images/p1.jpeg);
+background-repeat: no-repeat ;
+background-size: 100% 100% ;
+height: 400px;
+color:white;
+width: 50%;
+margin:auto;
+overflow: hidden;
+animation: changepic 15s linear infinite;
+}
+
+#text
+{
+margin-top: 5px;
+padding-top: 30-px;
+font-family: arial black;
+font-size: 30px;
+color:rgb(192, 29, 78);
+text-shadow: 5px 5px 5px black;
+text-transform: uppercase;
+//background: yellowgreen;
+position: relative;
+left: -600px;
+top: 100px;
+
+animation:runtext 10s linear infinite  ,mycolor 6s infinite; 
+
+
+}
+
+
+
+
+</style>
+
+<body>
+   <div class="back"><a href="index.html"> &larrhk; back</a></div>
+<header> 
+   
+   <div id="text">Welcome to Nature care</div>
+</header>
+
+
+</body>
+
+<footer>
+
+
+</footer>
+
+
+</html>
