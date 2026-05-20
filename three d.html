@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <H1>Transform 3D Animation</H1>
+<style>
+    h1{
+        box-shadow:10px 10px 10px;
+        text-align:center;
+        background-color:cyan;
+    }
+    @keyframes ani{
+        from {transfrom: rotateY(0deg) rotateX(0deg) rotateZ(0deg);}
+        to {transfrom: rotateY(360deg) rotateX(3400deg) rotateZ(230deg);}
+
+from{transform:rotateY(0);}
+TO{transform:rotateY(360deg);}
+    }
+    #container{
+        width:500px;
+        height:500px;
+        //background-color:black;
+        margin:auto;
+        text-align:center;
+        perspective:360px;
+
+    }
+    #p1
+    {
+
+        width:200px;
+        height:200px;
+        background-color:black;
+        position: relative;
+        top:100px;
+        left:100px;
+        animation:ani 5s linear infinite alternate;
+    
+    }
+
+    #p2
+    {
+     width:200px;
+     height:200px;
+    background-color:black;
+     position:relative;
+     top:-100px;
+     left:100px;
+     //backface-visibility:hidden;
+     animation:ani 5s linear infinite alternate;
+    }
+    .pic
+    {
+        width:100%;
+        height:100%;
+
+    }
+
+</style>
+
+<body>
+     <div class="back"><a href="daily practice work.html"> &larrhk; back</a></div>
+    <div id="container">
+        <div id="p1">
+            <img src ="images/n2.jpg" class="pic">
+        </div>
+
+        <div id="p2">
+
+          <img src="images/n4.jpg"  class="pic"> 
+        </div>
+    </div>
+    
+</body>
+</html>
