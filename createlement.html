@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Creating Tage by javascript </h1>
+
+  <script>
+
+    
+       var p = document.createElement("img")
+       document.body.appendChild(p)
+
+       document.title="No Error"
+
+       p.src="images/n4.jpg"
+      p.style="transition:0.50s;margin:20px;border-radius:10px;cursor:pointer;"
+      document.title="no error"
+      p.style.width="30%"
+       p.style.boxShadow="10px 10px 10px gray"
+       p.onclick=function()
+       {
+
+        p.src="images/JAVA1.jpg"
+
+       }
+    
+       p.onmouseout=function()
+       {
+        p.src="images/JAVA1.jpg"
+        p.style.transform="scale(1)"
+       }
+       p.onmouseover=function()
+       {
+        this.style.transform="scale(1.30)"
+
+       }
+
+
+</script>
+
+
+
+    
+</body>
+</html>

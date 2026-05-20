@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    h1{
+
+
+        box-shadow:10px 10px 10px gray;
+        text-align:center;
+        background-color:rgb(15, 43, 43);
+        color:white;
+    }
+#clock
+
+{
+    color:white;
+ font-size:20px;
+ font-family:arial black;
+ background-color:purple ;
+ width:200px;
+ padding:20px;
+ text-align:center;
+ margin-bottom: 10px;
+ box-shadow:10px 10px 10px gray;
+
+}
+</style>
+
+<body>
+ <h1> working with Date class in JS</h1>
+ <div id="clock"> Date</div>
+ <button onclick="st()">Start </button>
+ <button onclick="sto()">Stop</button>
+
+ <script>
+    function show()
+    {
+        var d = new Date()
+        var t= document.getElementById("clock")
+        t.innerHTML=d.toLocaleString()
+    }
+var timer
+function st()
+{
+    timer=setInterval("show()",1000)
+
+}
+
+function sto()
+{
+    clearInterval(timer)
+}
+
+ document.title= "no error"
+
+ </script>
+</body>
+</html>
