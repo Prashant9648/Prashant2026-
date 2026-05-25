@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<h1>>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+
+        h1{background-color: rgb(196, 187, 175);
+            color:darkslategray;
+            font-size:30px;
+            font-family:serif;
+            box-shadow:10px 10px 10px gray;
+            margin:auto;
+            text-align:center;
+            
+            margin-bottom:10px;
+
+
+
+        }
+    </style>
+    <h1> Using color object to change color</h1>
+    <input type="color" id="mycolor">
+    <br/>
+    <input type="range" min="20" max="255" value="50" id="red"><br/>
+    <input type="range" min="20" max="255" value="50" id="green"><br/>
+    <input type="range" min="20" max="255" value="50" id="blue"><br/>
+
+    <script>
+        var t
+        var r,g,b,c
+        var d = document.getElementById("mycolor")
+        var red = document.getElementById("red")
+        var green = document.getElementById("green")
+        var blue = document.getElementById("blue")
+
+        r = Math.round(Math.random()*255)
+        g = Math.round(Math.random()*255)
+        b = Math.round(Math.random()*255)
+        c = Math.round(Math.random()*255)
+
+        d.onchange = function()
+
+        {
+
+            //alert (this.value)
+            document.body.style.background=this.value
+            //document.body.style.color=this.value
+
+        }
+        red.onchange = function()
+        {
+            document.title = this.value
+            c2=`rgb(${red.value},${green.value},${blue.value})`
+            document.body.style.background=c2
+
+        }
+
+        green.onchange = function()
+        {
+            document.title = this.value
+            c2=`rgb(${red.value},${green.value},${blue.value})`
+            document.body.style.background=c2
+        }
+        blue.onchange = function()
+
+        {
+            document.title = this.value
+            c2=`rgb(${red.value},${green.value},${blue.value})`
+            document.body.style.background=c2
+        }
+        document.title="no error"
+
+
+
+
+    </script>
+    
+</body>
+</html>
