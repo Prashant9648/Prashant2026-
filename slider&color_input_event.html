@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> <h1>Slider images </h1>
+<style>
+    H1{
+        text-align: center;
+        font-size: 40PX;
+        box-shadow:10PX 10PX 10PX GRAY;
+        color: rgb(205, 206, 206);
+        background-color: rgb(140, 82, 82);
+    }
+     #box
+     {
+        margin: auto;
+        background:green(51,49,49);
+        width: 800px;
+
+     }
+      .pic
+      {  width:100px;
+         height: 100px;
+         margin: 1px;
+         transition:0.50s;
+         cursor: pointer;
+         position: relative;
+
+
+
+      }
+       #mask
+       {
+        background: 100px;
+        width: 100px;
+        height: 130px;
+        background: rgb(5,5,5);
+        box-shadow: 10px 10px 10px gray;
+        margin: auto;
+        overflow: hidden;
+
+       }
+      #slider
+      {
+        margin: 1px;
+        width: 99px;
+
+      }
+
+
+</style>
+
+<body>
+    <div id="mask">
+
+        <div id="box">
+       <img src="images/n1.jpg"class="pic">
+       <img src="images/n2.jpg"class="pic">
+       <img src="images/n3.jpg"class="pic">
+       <img src="images/n4.jpg"class="pic">
+       <img src="images/n5.jpg"class="pic">
+       <img src="images/n6.jpg"class="pic">
+       <img src="images/n7.jpg"class="pic">
+
+    </div>
+    <input type="range" min="0" max="600" id="slider" oninput="move()"> </div>
+    <input type="color" oninput="document.body.style.background=this.value">
+    <script>
+        function move(){
+            var slider=document.getElementById("slider");
+            var box = document.getElementById("box");
+            box.style.marginLeft= -slider.value + "px";
+            
+        }
+
+
+
+    </script>
+</body>
+</html>
