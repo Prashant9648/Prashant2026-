@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+header
+{
+    width:70%;
+    height:300px;
+    margin:auto;
+    box-shadow: 10px 10px 10px gray;
+}
+ 
+header img
+{
+    width:100%;
+    height:100%;
+
+
+}
+
+</style>
+<h1 id ="m">image of the </h1>
+
+<header>
+
+    <img id ="pic" src ="">
+
+</header>
+<body>
+    <script>
+
+       // Using switch statement
+       //syntax
+       var d = new Date();
+       var m = document.getElementById("m")
+       var pic = document.getElementById("pic")
+       pic.src = "images/n1.jpg"
+       var today = d.getDay()
+            switch(today)
+            {
+                case 1:
+                    m.innerHTML+="monday"
+                    pic.src="images/n2.jpg"
+
+                    break;
+
+                    case 2:
+                    m.innerHTML+="tuesday"
+                    pic.src="images/n3.jpg"
+
+                    break;
+
+                    case 3:
+                    m.innerHTML+="wednesday"
+                    pic.src="images/n4.jpg"
+
+                    break;
+                    case 4:
+                    m.innerHTML+="thursday"
+                    pic.src="images/n5.jpg"
+
+                    break;
+
+                    case 5:
+                    m.innerHTML+="friday"
+                    pic.src="images/n6.jpg"
+
+                    break;
+                    case 6:
+                    m.innerHTML+="saturday"
+                    pic.src="images/n7.jpg"
+
+                    break;
+                     case 0:
+                    m.innerHTML+="sunday"
+                    break;
+                    pic.src="images/n7.jpg"
+                    default:
+                        pic.src ="images/p2.jpg"
+
+                
+
+     
+            }
+           document.title ="ready"
+    </script>
+    
+</body>
+</html>

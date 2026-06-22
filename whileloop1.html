@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+h1{box-shadow: 10px 10px 10px gray;
+    font-size:30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: rgb(235, 240, 240);
+    background-color: brown;
+    
+    margin-top: 20px;
+     border-radius:10px;
+
+    
+
+
+}
+table{ box-shadow: 10PX 10PX 10PX gray;
+    background-color: rgb(143, 215, 241);
+    color: rgb(61, 62, 62);
+    margin: auto;
+    width:300px;
+    height: auto;
+    text-align: center;
+    border-radius:10px;
+    font-size:25px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+}
+</style>
+<body>
+    <h1> Working With Loop in Javascript</h1>
+    <table border="1" cellpadding="10">
+    <script>
+     var row = prompt("Enter Row number to create table..","5")
+     var col = prompt("Enter colunm number to create table..","5")
+     var c =1
+     while(c<=row)
+     {
+        document.write("<tr>")
+            for(var i = 1;i<=col;i++)
+        {
+            document.write("<td> Prashant <input type='text'></td>")
+        }
+            document.write("</tr>")
+            c++
+        
+     }
+
+    </script>
+
+    </table>
+</body>
+</html>
